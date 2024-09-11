@@ -16,14 +16,14 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/Blogs", BlogRouter);
-app.use("/CatProds", CatProdRouter);
-app.use("/CatProvs", CatProvRouter);
-app.use("/Cliente", ClienteRouter);
-app.use("/DetPed", DetPedRouter);
-app.use("/Pedido", PedidoRouter);
-app.use("/Producto", ProductoRouter);
-app.use("/Proveedor", ProveedorRouter);
+app.use("/blogs", BlogRouter);
+app.use("/catProds", CatProdRouter);
+app.use("/catProvs", CatProvRouter);
+app.use("/cliente", ClienteRouter);
+app.use("/detPed", DetPedRouter);
+app.use("/pedido", PedidoRouter);
+app.use("/producto", ProductoRouter);
+app.use("/proveedor", ProveedorRouter);
 
 try {
   await db.authenticate();
@@ -37,5 +37,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log("Server UP running in http://localhost:8000");
+  console.log("Server URL: http://localhost:8000");
 });

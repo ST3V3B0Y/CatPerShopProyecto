@@ -14,26 +14,24 @@ const CompEditBlog = () => {
 
   const update = async (e) => {
     e.preventDefault();
-    await axios.put(URI + id, {
-      title: title,
-      content: content,
-    });
+    await axios.put(URI + id, { title: title, content: content });
     navigate("/");
   };
 
   useEffect(() => {
+    const getBlogById = async () => {
+      const res = await axios.get(URI + id);
+      setTitle(res.data.title);
+      setContent(res.data.content);
+    };
     getBlogById();
-  });
+  }, [id]);
 
-  const getBlogById = async () => {
-    const res = await axios.get(URI + id);
-    setTitle(res.data.title);
-    setContent(res.data.content);
-  };
+  console.log(CompEditBlog);
 
   return (
     <div>
-      <h3> Edit POST </h3>
+      <h3> Create POST </h3>
       <form onSubmit={update}>
         <div className="mb-3">
           <label className="form-label">Title</label>
@@ -53,17 +51,11 @@ const CompEditBlog = () => {
             className="form-control"
           />
         </div>
-        <button type="button" className="btn btn-primary">
-          <a href="/">
-            <i className="fa-solid fa-person-walking-arrow-loop-left"></i>
-          </a>
-        </button>
         <button type="submit" className="btn btn-primary">
-          <i className="fa-solid fa-check"></i>
+          Actualizar
         </button>
       </form>
     </div>
   );
 };
-
 export default CompEditBlog;

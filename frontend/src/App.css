@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
-  height: 12vmin;
+  width: 12vmin;
+  height: auto;
   pointer-events: none;
   margin: 10px;
   margin-left: 150px;
@@ -20,6 +22,7 @@
 }
 
 .App-header {
+  width: 100%;
   background-color: #ff67bd;
   min-height: 15vmin;
   display: flexbox;
@@ -27,6 +30,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+
+.App-Navigator {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  background-color: rgba(1, 46, 40, 0.389);
 }
 
 .App-link {
@@ -40,14 +51,6 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.App-Navigator {
-  display: flex;
-  margin: auto;
-  width: 98%;
-  height: 100px;
-  /* background-color: rgba(1, 46, 40, 0.389); */
 }
 
 .Barra-busqueda {
@@ -68,12 +71,8 @@
 
 .Sect-Navigator {
   width: auto;
-  height: 100%;
+  height: 10%;
   /* background-color: rgba(128, 128, 128, 0.652); */
   margin: 40px;
   margin-left: 150px;
-}
-
-a {
-  color: none;
 }

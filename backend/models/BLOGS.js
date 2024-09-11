@@ -4,6 +4,11 @@ import { db } from "../database/db.js";
 import { Sequelize, QueryTypes, Model, DataTypes } from "sequelize";
 
 export const BlogModel = db.define("blogs", {
-  title: { type: DataTypes.STRING },
-  content: { type: DataTypes.STRING },
+  // id: {
+  //   type: DataTypes.INTEGER,
+  //   autoIncrement: true,
+  //   primaryKey: true,
+  // },
+  title: { type: DataTypes.STRING, allowNull: true },
+  content: { type: DataTypes.STRING, allowNull: true },
 });

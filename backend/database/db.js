@@ -1,5 +1,6 @@
 import { Sequelize } from "sequelize";
-// import { MySqlDialect } from "@sequelize/mysql";
+
+// Base de datos Clever Cloud
 
 export const db = new Sequelize(
   "b7l0kdf9aaiprg6x683n",
@@ -11,11 +12,9 @@ export const db = new Sequelize(
   }
 );
 
-// export const db = new Sequelize({
-//   dialect: MySql,
-//   database: "b7l0kdf9aaiprg6x683n",
-//   user: "u79iiqalpeyfryss",
-//   password: "pLzk67KcZ2aVSbCSCLVq",
-//   host: "b7l0kdf9aaiprg6x683n-mysql.services.clever-cloud.com",
-//   port: 3306,
+// Base de datos local
+
+// export const db = new Sequelize("catpershop", "root", "", {
+//   host: "127.0.0.1",
+//   dialect: "mysql",
 // });

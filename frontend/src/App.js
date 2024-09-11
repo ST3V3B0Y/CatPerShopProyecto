@@ -11,10 +11,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <navigator className="App-Navigator ">
-          <a href="/">
-            <img src={logocps} className="App-logo" alt="logo" />
-          </a>
+        <nav className="App-Navigator">
+          <section>
+            <a href="/">
+              <img src={logocps} className="App-logo" alt="logo" />
+            </a>
+          </section>
           <section className="Sect-Navigator">
             <input
               placeholder="Búsqueda"
@@ -24,7 +26,7 @@ function App() {
           </section>
           <section className="Sect-Navigator"></section>
           <section className="Sect-Navigator"></section>
-        </navigator>
+        </nav>
       </header>
 
       <BrowserRouter>
