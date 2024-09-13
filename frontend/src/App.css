@@ -37,11 +37,11 @@
   margin: auto;
   width: 100%;
   height: auto;
-  background-color: rgba(1, 46, 40, 0.389);
+  /* background-color: rgba(1, 46, 40, 0.389); */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000000;
 }
 
 @keyframes App-logo-spin {
@@ -75,4 +75,8 @@
   /* background-color: rgba(128, 128, 128, 0.652); */
   margin: 40px;
   margin-left: 150px;
+}
+
+.button-turnback {
+  color: white;
 }

@@ -2,9 +2,9 @@ import logocps from "./logocps.jpg";
 import "./App.css";
 
 // Importamos componentes
-import CompShowBlogs from "./blog/ShowBlogs";
-import CompCreateBlog from "./blog/CreateBlog";
-import CompEditBlog from "./blog/EditBlog";
+import CompShowBlogs from "./Components/ShowBlogs";
+import CompCreateBlog from "./Components/CreateBlog";
+import CompEditBlog from "./Components/EditBlog";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
