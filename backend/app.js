@@ -36,6 +36,6 @@ app.get("/", (req, res) => {
   res.send("Bienvenido a la base de datos de Steve Jobs");
 });
 
-app.listen(8000, () => {
-  console.log("Server URL: http://localhost:8000");
+app.listen(8087, () => {
+  console.log("Server URL: http://localhost:8087");
 });

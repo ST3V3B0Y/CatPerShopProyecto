@@ -1,9 +1,11 @@
-//importamos el Modelo
+// Importamos el Modelo
+
 import { ProductosModel } from "../models/PRODUCTOS.js";
 
 //** Métodos para el CRUD **/
 
 //Mostrar todos los registros
+
 export const getAllProductos = async (req, res) => {
   try {
     const Producto = await ProductosModel.findAll();
@@ -14,6 +16,7 @@ export const getAllProductos = async (req, res) => {
 };
 
 //Mostrar un registro
+
 export const getProducto = async (req, res) => {
   try {
     const Producto = await ProductosModel.findAll({
@@ -26,6 +29,7 @@ export const getProducto = async (req, res) => {
 };
 
 //Crear un registro
+
 export const createProducto = async (req, res) => {
   try {
     await ProductosModel.create(req.body, {});
@@ -38,6 +42,7 @@ export const createProducto = async (req, res) => {
 };
 
 //Actualizar un registro
+
 export const updateProducto = async (req, res) => {
   try {
     await ProductosModel.update(req.body, {
@@ -52,6 +57,7 @@ export const updateProducto = async (req, res) => {
 };
 
 //Eliminar un registro
+
 export const deleteProducto = async (req, res) => {
   try {
     await ProductosModel.destroy({
