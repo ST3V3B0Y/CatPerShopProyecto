@@ -17,13 +17,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/blogs", BlogRouter);
-app.use("/catProds", CatProdRouter);
-app.use("/catProvs", CatProvRouter);
-app.use("/cliente", ClienteRouter);
-app.use("/detPed", DetPedRouter);
-app.use("/pedido", PedidoRouter);
-app.use("/producto", ProductoRouter);
-app.use("/proveedor", ProveedorRouter);
+app.use("/categoria-productos", CatProdRouter);
+app.use("/categoria-proveedores", CatProvRouter);
+app.use("/clientes", ClienteRouter);
+app.use("/detalle-pedidos", DetPedRouter);
+app.use("/pedidos", PedidoRouter);
+app.use("/productos", ProductoRouter);
+app.use("/proveedores", ProveedorRouter);
 
 try {
   await db.authenticate();

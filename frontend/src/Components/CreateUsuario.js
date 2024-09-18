@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const URI = "http://localhost:8087/producto/";
+const URI = "http://localhost:8087/productos/";
 
 const CompCreateTable = () => {
   const [producto, setProducto] = useState("");

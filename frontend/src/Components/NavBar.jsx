@@ -27,16 +27,9 @@ function Navbar() {
           </a>
         </div>
         <div className="account">
-          <div className="register">
-            <label>
-              <a href="/" className="cuenta-navbar">
-                Registrarse
-              </a>
-            </label>
-          </div>
           <div className="login">
             <label>
-              <a href="/" className="cuenta-navbar">
+              <a href="/login" className="cuenta-navbar">
                 Iniciar Sesión
               </a>
             </label>

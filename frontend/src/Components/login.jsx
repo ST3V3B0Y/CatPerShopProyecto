@@ -25,7 +25,7 @@ function Login() {
           </div>
           <button type="submit">Ingresar</button>
           <div className="register-link">
-            <p>¿No tienes cuenta?</p> <a href="/">Registrate</a>
+            <p>¿No tienes cuenta?</p> <a href="/login">Registrate</a>
           </div>
         </form>
       </div>

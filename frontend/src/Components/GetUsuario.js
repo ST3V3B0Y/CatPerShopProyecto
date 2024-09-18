@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const URI = "http://localhost:8087/producto/";
+const URI = "http://localhost:8087/productos/";
 
 // Uso de HOOKS (Api's de node para gestionar )
 

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-const URI = "http://localhost:8087/producto/";
+const URI = "http://localhost:8087/productos/";
 
 const CompEditTable = () => {
   const [producto, setProducto] = useState("");

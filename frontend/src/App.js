@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/invetario" element={<CompShowTable />} />
+          <Route path="/inventario" element={<CompShowTable />} />
           <Route path="/nuevo-producto" element={<CompCreateTable />} />
           <Route path="/editar-producto/:id" element={<CompEditTable />} />
         </Routes>
