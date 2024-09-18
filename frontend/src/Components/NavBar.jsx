@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import BurguerButton from "./BurgerButton";
 // import styled from "styled-components";
 
 function Navbar() {
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
   return (
     <>
       <div className="NavContainer">
@@ -12,7 +16,7 @@ function Navbar() {
           </a>
           CatPerShop
         </h2>
-        <div className="nav-menu active">
+        <div className={`nav-menu ${clicked ? 'active' : ''}`}>
           <a href="/" className="a-menu">
             Shop
           </a>
@@ -43,7 +47,7 @@ function Navbar() {
           </div>
         </div>
         <div className="burguer-navbar">
-          <BurguerButton />
+          <BurguerButton clicked={clicked} handleClick={handleClick}/>
         </div>
       </div>
     </>

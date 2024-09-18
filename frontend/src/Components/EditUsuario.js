@@ -31,12 +31,12 @@ const CompEditTable = () => {
       setDescripcion(res.descripcion);
     };
     getProdId();
-  }, [producto_id]);
+  }, []);
 
   return (
     <div>
       <h3 className="titulo-editUsuario m-3">
-        Editar Producto <script>{producto_id}</script>
+        Editar Producto
       </h3>
       <form onSubmit={update}>
         <div className="mb-3">
