@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Inicio() {
   return (
-    <div className="head-index">
+    <div className="index-box">
       <header className="head-index">
         <h1 className="titulo-index">Bienvenido a CatPerShop</h1>
         <h2 className="frase-index">Lo mejor para tu mascota</h2>

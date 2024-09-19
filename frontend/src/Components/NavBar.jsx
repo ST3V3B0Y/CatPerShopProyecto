@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import BurguerButton from "./BurgerButton";
 // import styled from "styled-components";
 
 function Navbar() {
+
+  const [clicked, setClicked] = useState(false)
+  console.log(clicked)
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
+
   return (
     <>
       <div className="NavContainer">
@@ -12,17 +19,17 @@ function Navbar() {
           </a>
           CatPerShop
         </h2>
-        <div className="nav-menu active">
-          <a href="/" className="a-menu">
+        <div className={`nav-menu ${clicked ? 'active' : ''}`}>
+          <a href="/login" className="a-menu">
             Shop
           </a>
-          <a href="/" className="a-menu">
+          <a href="/login" className="a-menu">
             About
           </a>
-          <a href="/" className="a-menu">
+          <a href="/login" className="a-menu">
             Contact
           </a>
-          <a href="/" className="a-menu">
+          <a href="/login" className="a-menu">
             Blog
           </a>
         </div>
@@ -36,59 +43,12 @@ function Navbar() {
           </div>
         </div>
         <div className="burguer-navbar">
-          <BurguerButton />
+          <BurguerButton clicked={clicked} handleClick={handleClick}/>
         </div>
+        <div className={`burguer-transition initial ${clicked ? 'active' : ''}`}></div>
       </div>
     </>
   );
 }
 
 export default Navbar;
-
-// const NavContainer = styled.nav`
-//   padding: 2rem;
-//   background-color: #ff88dd;
-//   display: flex;
-//   align-items: left;
-//   justify-content: space-between;
-
-//   .login {
-//     background
-//   }
-
-//   .Titulo {
-//     color: white;
-//     font-weight: bold;
-//     align-items: center;
-//     text-shadow: -1px 2px 2px black;
-//   }
-
-//   a {
-//     margin-right: 1rem;
-//     color: white;
-//     text-decoration: none;
-//   }
-
-//   img {
-//     width: 80px;
-//     margin-left: 100px;
-//     padding: 0;
-//     border-radius: 100%;
-//     pointer-events: none;
-//     animation: img infinite 10s linear;
-//   }
-
-//   .nav-menu {
-//     margin: auto 0;
-//     font-size: 18px;
-//   }
-
-//   @keyframes img {
-//     from {
-//       transform: rotate(0deg);
-//     }
-//     to {
-//       transform: rotate(360deg);
-//     }
-//   }
-// `;

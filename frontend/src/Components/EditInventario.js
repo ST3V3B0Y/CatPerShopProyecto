@@ -9,34 +9,36 @@ const CompEditTable = () => {
   const [precio, setPrecio] = useState("");
   const [descripcion, setDescripcion] = useState("");
   const navigate = useNavigate();
-  const { producto_id } = useParams();
+  const { id } = useParams();
 
   // Procedimiento para actualizar
 
   const update = async (e) => {
     await e.preventDefault();
-    axios.put(URI + producto_id, {
+    axios.put(URI + id, {
       producto: producto,
       precio: precio,
       descripcion: descripcion,
     });
-    navigate("/");
+    navigate("/inventario");
   };
 
   useEffect(() => {
     const getProdId = async (e) => {
-      const res = await axios.get(URI + producto_id);
+      const res = await axios.get(URI + id);
       setProducto(res.producto);
       setPrecio(res.precio);
       setDescripcion(res.descripcion);
     };
     getProdId();
-  }, [producto_id]);
+  }, [id]);
+
+  
 
   return (
     <div>
       <h3 className="titulo-editUsuario m-3">
-        Editar Producto <script>{producto_id}</script>
+        Editar Producto <script>{id}</script>
       </h3>
       <form onSubmit={update}>
         <div className="mb-3">
@@ -66,7 +68,7 @@ const CompEditTable = () => {
             className="form-control"
           />
         </div>
-        <Link to="/" className="btn btn-primary button-turnback">
+        <Link to="/inventario" className="btn btn-primary button-turnback">
           <i className="fa-solid fa-person-walking-arrow-loop-left icon"></i>
         </Link>
         <button type="submit" className="btn btn-primary mx-3">

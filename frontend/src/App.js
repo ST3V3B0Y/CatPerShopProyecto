@@ -1,9 +1,9 @@
 // Import Components
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CompShowTable from "./Components/GetUsuario.js";
-import CompCreateTable from "./Components/CreateUsuario.js";
-import CompEditTable from "./Components/EditUsuario.js";
+import CompShowTable from "./Components/GetInventario.js";
+import CompCreateTable from "./Components/CreateInventario.js";
+import CompEditTable from "./Components/EditInventario.js";
 import Navbar from "./Components/NavBar.jsx";
 import Inicio from "./Components/Index.jsx";
 import Login from "./Components/login.jsx";
