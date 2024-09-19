@@ -11,24 +11,36 @@ function Inicio() {
       <body>
         <div className="rutas-index">
           <div>
-            <button type="button" className="boton-rutas btn btn-primary">
-              <Link to="/">Usuarios</Link>
-            </button>
+            <Link
+              to="/login"
+              className="link-index btn btn-primary boton-rutas"
+            >
+              Usuarios
+            </Link>
           </div>
           <div>
-            <button type="button" className="boton-rutas btn btn-primary">
-              <Link to="/inventario">Productos</Link>
-            </button>
+            <Link
+              to="/inventario"
+              className="link-index btn btn-primary boton-rutas"
+            >
+              Productos
+            </Link>
           </div>
           <div>
-            <button type="button" className="boton-rutas btn btn-primary ">
-              <Link to="/inventario">Ventas</Link>
-            </button>
+            <Link
+              to="/inventario"
+              className="link-index boton-rutas btn btn-primary"
+            >
+              Ventas
+            </Link>
           </div>
           <div>
-            <button type="button" className="boton-rutas btn btn-primary">
-              <Link to="/inventario">Otros</Link>
-            </button>
+            <Link
+              to="/inventario"
+              className="link-index boton-rutas btn btn-primary"
+            >
+              Otros
+            </Link>
           </div>
         </div>
       </body>
