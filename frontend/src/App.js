@@ -8,6 +8,10 @@ import Navbar from "./Components/NavBar.jsx";
 import Inicio from "./Components/Index.jsx";
 import Login from "./Components/login.jsx";
 
+export const borrar = () =>{
+  console.log('Borrar después de abrir visual')
+}
+
 function App() {
   return (
     <div className="App">
