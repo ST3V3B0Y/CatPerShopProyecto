@@ -1,49 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Inicio() {
   return (
     <div className="index-box">
-      <header className="head-index">
-        <h1 className="titulo-index">Bienvenido a CatPerShop</h1>
+      <div className="head-index">
+        <h1 className="titulo-index">
+          Bienvenido a <br /> <span className="span-index">CatPerShop</span>{" "}
+        </h1>
         <h2 className="frase-index">Lo mejor para tu mascota</h2>
-      </header>
-      <body>
-        <div className="rutas-index">
-          <div>
-            <Link
-              to="/login"
-              className="link-index btn btn-primary boton-rutas"
-            >
-              Usuarios
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/inventario"
-              className="link-index btn btn-primary boton-rutas"
-            >
-              Productos
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/inventario"
-              className="link-index boton-rutas btn btn-primary"
-            >
-              Ventas
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/inventario"
-              className="link-index boton-rutas btn btn-primary"
-            >
-              Otros
-            </Link>
-          </div>
+      </div>
+      <div className="publicidad-index">
+        <button className="boton-publicidad">
+          <i class="flecha fa-solid fa-chevron-left"></i>
+        </button>
+        <div className="cuadro-publicitario">
+          <h1>Publicidad</h1>
         </div>
-      </body>
+        <button className="boton-publicidad">
+          <i class="flecha fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div className="barra1" />
+      <div className="barra2" />
+      <div className="barra3" />
+
+      <div className="menu-body-index">
+        <div className="categoria-body-index">
+          <img
+            src="../perro.png"
+            alt="Logo perro"
+            className="icon-menu-index"
+          />
+          <a href="/">Accesorios para Perros</a>
+        </div>
+        <div className="categoria-body-index">
+          <img src="../gato.png" alt="Logo gato" className="icon-menu-index" />
+          <a href="/">Accesorios para Gatos</a>
+        </div>
+      </div>
     </div>
   );
 }

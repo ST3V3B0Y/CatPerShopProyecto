@@ -55,7 +55,7 @@ const CompCreateTable = () => {
             className="form-control"
           />
         </div>
-        <Link to="/" className="btn btn-secundary button-turnback">
+        <Link to="/inventario" className="btn btn-secundary button-turnback">
           <i className="fa-solid fa-person-walking-arrow-loop-left icon"></i>
         </Link>
         <button type="submit" className="btn btn-success m-3">

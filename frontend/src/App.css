@@ -4,30 +4,42 @@
   text-align: center;
   width: 100%;
   background-color: #ffe5f0af;
+}
 
+.container {
+  padding-top: 150px;
+}
+
+.div-footer {
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #fb93d7;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  justify-content: end;
 }
 
 /* ------------------------- Inicio / Home ------------------------- */
-.index-box{
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  justify-content: center;
-  background-color: #ffe5f0af;
-  padding: 0;
-  margin: 0;
-  .head-index {
-  justify-content: center;
-  display: inline-block;
-  background-color: #ffe5f0af;
-}
-}
-
-
-.rutas-index {
+.index-box {
   width: 100%;
   height: auto;
-  display: flex;
+  display: block;
+  align-items: center;
+  background-color: transparent;
+  padding: auto;
+  margin: auto;
+  background-image: url(./fondo.png);
+}
+
+.head-index {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  margin: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  /* background-color: #7683fc; */
 }
 
 .titulo-index {
@@ -36,20 +48,75 @@
   padding: 50px;
   margin-top: 50px;
   font-family: "Prompt";
-  text-shadow: -2px 2px 4px #ff88ff;
+  font-weight: 700;
+  transition: all 10s ease;
+  /* text-shadow: -2px 2px 4px #ff88ff; */
 }
 
-.boton-rutas {
-  width: 200px;
-  height: 150px;
-  margin: 5px;
+.span-index {
+  margin-left: 5px;
+  font-size: 80px;
+  font-weight: 700;
+  color: black;
+  text-shadow: -2px 2px 15px #dc90e3;
+  transition: all 5s ease;
+  /* text-decoration: underline 2px black; */
+}
+
+.frase-index {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.publicidad-index {
+  width: 800px;
+  height: 300px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: center;
+  /* background-color: gray; */
+}
+
+.cuadro-publicitario {
+  width: 500px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.674);
+  margin: auto 10px;
+  h1 {
+    margin-top: 100px;
+    font-weight: lighter;
+  }
+}
+
+.boton-publicidad {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+.boton-publicidad:hover {
+  border: 5px solid rgb(55, 100, 69);
+  .flecha:hover {
+    color: rgb(55, 100, 69);
+  }
+}
+
+.link-index {
+  padding: 50px;
+  background-color: blue;
 }
 
 .link-index {
   text-decoration: none;
   color: white;
-  background-color: #555555;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* .Barra-busqueda {
@@ -68,6 +135,67 @@
   display: fixed;
 } */
 
+.menu-body-index {
+  width: 100%;
+  height: auto;
+  /* background-color: gray; */
+  margin: auto;
+  margin-bottom: 120px;
+  padding: 30px;
+  display: inline-flex;
+  justify-content: space-around;
+  div {
+    width: 350px;
+    height: 180px;
+    margin: auto;
+    /* background-color: #333; */
+  }
+}
+
+.barra1 {
+  width: 100%;
+  height: 5px;
+  background-color: yellow;
+  margin-top: -50px;
+}
+
+.barra2 {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(2, 16, 95);
+  margin: 0.1rem;
+}
+
+.barra3 {
+  width: 100%;
+  height: 5px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+.categoria-body-index {
+  display: flex;
+  margin: auto;
+  a {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Prompt";
+    text-decoration: underline 0.5px;
+    margin: auto;
+    color: black;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.807);
+    border: 1px solid #666;
+    margin: auto;
+    padding: auto;
+  }
+}
+.categoria-body-index a:hover {
+  text-decoration: underline 2px green;
+}
 /* ------------------------- Button components turnback -------------------------*/
 
 .button-turnback {
@@ -82,35 +210,79 @@
 
 /* ------------------------- NavBar / Barra de navegacion ------------------------- */
 
-.NavContainer {
-  width: 100%;
+/* .NavContainer {
   padding: 0.4rem;
-  padding-top: 0;
-  padding-bottom: 0;
   background-color: #fb93d7;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
-  /* position: fixed; */
+  a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  // border-bottom-left-radius: 10%;
+  // border-bottom-right-radius: 10%; 
+  // position: fixed; 
+  // position: sticky;
+}*/
+
+.sub-navbar {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(185, 154, 185);
+  display: flex;
+  justify-content: center;
+}
+
+.categoria-subnavbar {
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  margin: auto 30px;
+  display: flex;
+  padding: 2px;
+
+  p {
+    font-size: 16px;
+    font-family: "Prompt";
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+.icon-categoria {
+  margin: auto;
 }
 
 .account {
-  width: 120px;
-  height: 86px;
+  width: 150px;
+  height: 80px;
   margin-top: -1rem;
   padding: 0.5rem;
   /* background-color: gray; */
-  display: block;
+  align-items: center;
+  /* display: contents; */
 }
-.login {
-  width: auto;
-  height: 35px;
-  margin-top: 5px;
-  border: #000;
-  background-color: cyan;
+.boton-iniciar-sesion {
+  padding: auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(104, 93, 103);
+  @media (min-width: 900px) {
+    border: none;
+    background-color: none;
+  }
 }
+
+.boton-iniciar-sesion {
+  font-weight: bold;
+  font-style: 22px;
+}
+
 /* .register {
   width: auto;
   height: 35px;
@@ -127,17 +299,18 @@
 }
 
 .a-menu {
+  color: black;
   font-size: 22px;
   margin-right: 25px;
   text-decoration: none;
   justify-content: center;
 }
 
-img {
+.logo {
   width: 100px;
   box-sizing: border-box;
   border-radius: 100%;
-  animation: img infinite 10s linear;
+  animation: logo infinite 10s linear;
 }
 
 .nav-menu {
@@ -147,7 +320,7 @@ img {
   text-align: center;
 }
 
-@keyframes img {
+@keyframes logo {
   from {
     transform: rotate(0deg);
   }
@@ -157,10 +330,9 @@ img {
 }
 
 /* ------------------------- BurguerMenu ------------------------- */
-.nav-menu {
+/* .nav-menu {
   position: absolute;
   top: -700px;
-  right: -2000px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -171,16 +343,17 @@ img {
   }
   @media (min-width: 900px) {
     position: initial;
-    margin: 0;
+    margin: 0; 
     .a-menu {
       font-size: 1rem;
       color: white;
       display: inline;
     }
+    display: block;
   }
 }
 
-.nav-menu.active {
+.nav-menu .active {
   width: 100%;
   display: block;
   position: absolute;
@@ -191,7 +364,9 @@ img {
   right: 0;
   text-align: center;
   .a-menu {
-    color: #333;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: wheat;
   }
 }
 
@@ -199,19 +374,9 @@ img {
   @media (min-width: 900px) {
     display: none;
   }
-}
+} */
 
-.burguer-transition .initial{
-  position: absolute;
-  background-color: rgb(33, 31, 31);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-
-}
-
-.nav-icon-1 {
+/* .nav-icon-1 {
   width: 30px;
   height: 30px;
   position: relative;
@@ -223,7 +388,7 @@ img {
 .nav-icon-1 span {
   width: 5px;
   height: 5px;
-  background-color: #000;
+  background-color: #333;
   display: block;
   border-radius: 50%;
   position: absolute;
@@ -295,7 +460,7 @@ img {
 .nav-icon-1.open span:nth-child(8) {
   left: 18px;
   bottom: 6px;
-}
+} */
 
 /* ------------------------- Login ------------------------- */
 
@@ -304,6 +469,7 @@ img {
   padding: 0;
   box-sizing: border-box;
   background-image: url(./fondo.png);
+  background-repeat: repeat;
 }
 
 .body-login {
@@ -321,13 +487,14 @@ img {
   background-color: #f6e0e9af;
   padding: 10px;
   box-shadow: 0 2px 20px #666;
+  border-radius: 5px;
 }
 
 .login-box h1 {
   font-size: 45px;
   text-align: center;
   color: #000;
-  text-shadow: -2px 2px 10px rgb(255, 86, 126);
+  text-shadow: -2px 2px 10px rgb(167, 131, 131);
 }
 
 .login-box .input-box {
@@ -363,14 +530,16 @@ img {
   border-bottom-color: #333;
 }
 
-.cuenta-navbar {
+.a-cuenta-navbar {
+  box-sizing: border-box;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   font-family: "Prompt";
   margin: none;
   padding: none;
   color: #000;
+  letter-spacing: 1px;
 }
 
 .login-box .remember-forgot {
@@ -424,15 +593,25 @@ img {
 .login-box .register-link {
   font-size: 14px;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0 15px;
 }
 
-.register-link p a {
-  color: white;
+.login-box button:hover {
+  background-color: #b7b7b7;
+}
+
+.register-link a {
+  color: #7683fc;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.register-link p {
+  color: black;
   text-decoration: none;
   font-weight: 600;
 }
 
-.register-link p a:hover {
+.register-link a:hover {
   text-decoration: underline;
 }
