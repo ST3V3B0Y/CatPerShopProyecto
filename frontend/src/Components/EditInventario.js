@@ -24,7 +24,7 @@ const CompEditTable = () => {
   };
 
   useEffect(() => {
-    const getProdId = async (e) => {
+    const getProdId = async () => {
       const res = await axios.get(URI + id);
       setProducto(res.producto);
       setPrecio(res.precio);
@@ -38,7 +38,7 @@ const CompEditTable = () => {
   return (
     <div>
       <h3 className="titulo-editUsuario m-3">
-        Editar Producto <script>{id}</script>
+        Editar Producto {id}
       </h3>
       <form onSubmit={update}>
         <div className="mb-3">

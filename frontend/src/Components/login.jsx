@@ -2,30 +2,31 @@ import React, { useState } from "react";
 import "../App.css";
 import { FaUser, FaLock } from "react-icons/fa";
 import axios from "axios";
-import { useNavigate } from "react-router";
+// import { Navigate } from "react-router";
 
-function Login({ setUser }) {
-  const [body, setBody] = useState({ usuario: "", contraseña: "" });
-  const { push } = useNavigate();
-  const inputChange = ({ target }) => {
-    const { name, value } = target;
+function Login() {
+  const [body, setBody] = useState({ usuario: '', contraseña: ''})
+  //const { push } = Navigate()
+  const inputChange = ({target}) => {
+    const {name, value} = target
     setBody({
       ...body,
-      [name]: value,
-    });
-  };
+      [name]: value
+    })
+  }
+const onSubmit = () => {
+  axios.post('http://localhost:8087/api/login', body)
+  .then(({data}) => {
+    console.log(data)
+    //window.onload.href("/Admin")
+    //localStorage.setItem('auth', '"yes')
+    //push('/Admin')
+  }).catch(({ response }) => {
+    console.log(response)
+  })
+}
 
-  const onSubmit = () => {
-    axios
-      .post("http://localhost:8087/api/login", body)
-      .then(({ data }) => {
-        localStorage.setItem("auth", "yes");
-        push("/admin-index");
-      })
-      .catch(({ response }) => {
-        console.log(response);
-      });
-  };
+  
   return (
     <div className="body-login">
       <div className="login-box">
@@ -45,7 +46,7 @@ function Login({ setUser }) {
           <div className="input-box">
             <input
               type="password"
-              placeholder="Contraseña"
+              placeholder="Contrasena"
               required
               value={body.contraseña}
               onChange={inputChange}

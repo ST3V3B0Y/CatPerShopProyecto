@@ -32,12 +32,12 @@ function Inicio() {
             src="../perro.png"
             alt="Logo perro"
             className="icon-menu-index"
-          />
-          <a href="/">Accesorios para Perros</a>
+          /> 
+          <a href="/" className="link-menu-index">Accesorios para Perros</a>
         </div>
         <div className="categoria-body-index">
           <img src="../gato.png" alt="Logo gato" className="icon-menu-index" />
-          <a href="/">Accesorios para Gatos</a>
+          <a href="/"  className="link-menu-index">Accesorios para Gatos</a>
         </div>
       </div>
     </div>

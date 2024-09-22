@@ -40,7 +40,7 @@ const CompShowTable = () => {
                 <th>Producto</th>
                 <th>Precio</th>
                 <th>Descripcion</th>
-                <th>Actions</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>

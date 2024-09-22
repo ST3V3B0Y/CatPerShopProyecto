@@ -6,7 +6,7 @@ const URI = "http://localhost:8087/clientes/";
 
 // Uso de HOOKS (Api's de node para gestionar )
 
-const CompShowTable = () => {
+const CompShowUsuarios = () => {
   const [cliente, setCliente] = useState();
   useEffect(() => {
     getAllClientes();

@@ -29,7 +29,7 @@ const CompCreateTable = () => {
       <h3 className="titulo-createUsuario m-3"> Ingresar nuevo producto </h3>
       <form onSubmit={store}>
         <div className="mb-3">
-          <label className="form-label">Title</label>
+          <label className="form-label">Producto</label>
           <input
             value={producto}
             onChange={(e) => setProducto(e.target.value)}
@@ -38,7 +38,7 @@ const CompCreateTable = () => {
           />
         </div>
         <div className="mb-3">
-          <label className="form-label">Content</label>
+          <label className="form-label">Precio</label>
           <textarea
             value={precio}
             onChange={(e) => setPrecio(e.target.value)}

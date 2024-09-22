@@ -1,7 +1,7 @@
 //importamos la conexión a la DB
 import { db } from "../database/db.js";
 //importamos sequelize
-import { Sequelize, QueryTypes, Model, DataTypes } from "sequelize";
+import { DataTypes } from "sequelize";
 
 export const ProductosModel = db.define("productos", {
   producto_id: {
@@ -28,5 +28,5 @@ export const ProductosModel = db.define("productos", {
   descripcion: {
     type: DataTypes.STRING,
     // allowNull: false,
-  },
+  }
 });

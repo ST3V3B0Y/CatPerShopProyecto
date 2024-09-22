@@ -1,5 +1,6 @@
 import { Sequelize } from "sequelize";
 
+
 // Base de datos Clever Cloud
 
 export const db = new Sequelize(

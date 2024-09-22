@@ -29,4 +29,10 @@ export const ClientesModel = db.define("clientes", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  usuario: {
+    type: DataTypes.STRING,
+  },
+  contraseña: {
+    type: DataTypes.STRING,
+  }
 });

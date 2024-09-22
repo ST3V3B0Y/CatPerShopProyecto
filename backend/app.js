@@ -1,3 +1,4 @@
+/*const mysql = require('mysql')*/
 import express from "express";
 import cors from "cors";
 //importamos la conexión a la DB
@@ -13,12 +14,7 @@ import { ProductoRouter } from "./routes/ProductosRoutes.js";
 import { ProveedorRouter } from "./routes/ProveedoresRoutes.js";
 
 const app = express();
-app.use(
-  cors({
-    origin: "http://localhost:3000/",
-    credentials: true,
-  })
-);
+app.use(cors())
 app.use(express.json());
 app.use("/blogs", BlogRouter);
 app.use("/categoria-productos", CatProdRouter);
@@ -40,20 +36,12 @@ app.get("/", (req, res) => {
   res.send("Bienvenido a la base de datos de Steve Jobs");
 });
 
-// Cambiar a get en caso de no servir
 
 app.post("/api/login", (req, res) => {
   const { usuario, contraseña } = req.body;
   const values = { usuario, contraseña };
-  try {
-    db.authenticate();
-    console.log("Conexión exitosa a la DB");
-  } catch (error) {
-    console.log(`El error de conexión es: ${error}`);
-  }
-
   db.query(
-    "SELECT * FROM clientes WHERE usuario = ? AND contraseña = ?",
+    "SELECT * FROM clientes WHERE usuario = ? AND contraseña = ?", values,
     (err, result) => {
       if (err) {
         res.status(500).send(err);

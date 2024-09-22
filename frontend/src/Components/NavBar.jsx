@@ -46,10 +46,10 @@ function Navbar() {
       <div className="sub-navbar">
         <button className="categoria-subnavbar">
           <p>Mascotas</p>
-          <i class="icon-categoria fa-solid fa-chevron-down"></i>
+          <i className="icon-categoria fa-solid fa-chevron-down"></i>
         </button>
         <button className="categoria-subnavbar">
-          <p>Productos</p>
+          <a href="/inventario" className="a-navbar">Productos</a>
           <i className="icon-categoria fa-solid fa-chevron-down"></i>
         </button>
         <button className="categoria-subnavbar">
