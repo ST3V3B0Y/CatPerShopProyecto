@@ -6,7 +6,7 @@
   EN LA DISTRIBUCIÓN DE ACCESIORIOS PARA 
                 MÁSCOTAS.
                                                                                 
-  DISEÑADO CON PYTHON, HTML, JAVASCRIPT Y MYSQL 
+  DISEÑADO CON REACT, HTML, JAVASCRIPT Y MYSQL 
   PERMITIENDO ASÍ UN SENCILLO Y ÓPTIMO FUNCIONAMIENTO
 
                                                                          
